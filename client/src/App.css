@@ -1,0 +1,89 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: #f3f4f6; color: #111827; line-height: 1.5; }
+.app { min-height: 100vh; }
+
+/* Navbar */
+.navbar { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem; background: #1f2937; color: #fff; }
+.navbar-brand { display: flex; align-items: center; gap: 0.5rem; font-size: 1.25rem; font-weight: 700; }
+.navbar-brand a { color: #fff; text-decoration: none; }
+.navbar-links { display: flex; gap: 1rem; align-items: center; }
+.navbar-links a { color: #cbd5e1; text-decoration: none; font-size: 0.95rem; display: flex; align-items: center; gap: 0.4rem; }
+.navbar-links a:hover { color: #fff; }
+
+/* Page */
+.page { padding: 1.5rem; max-width: 1200px; margin: 0 auto; }
+.page-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+.page-header h2 { font-size: 1.5rem; font-weight: 700; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.55rem 1rem; border: 1px solid #d1d5db; background: #fff; color: #111827; border-radius: 0.5rem; font-size: 0.95rem; cursor: pointer; }
+.btn:hover { background: #f9fafb; }
+.btn-primary { background: #2563eb; color: #fff; border-color: #2563eb; }
+.btn-primary:hover { background: #1d4ed8; }
+.btn.small { padding: 0.35rem 0.6rem; font-size: 0.8rem; }
+.btn.icon-btn { padding: 0.4rem; background: transparent; border-color: transparent; color: #6b7280; }
+.btn.icon-btn:hover { background: #f3f4f6; color: #111827; }
+.btn.icon-btn.danger { color: #dc2626; }
+.btn.icon-btn.danger:hover { background: #fef2f2; }
+
+/* Card */
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1.5rem; }
+.card h3 { font-size: 1.1rem; margin-bottom: 1rem; color: #111827; }
+.form-card { max-width: 700px; }
+
+/* Inputs */
+input, select, textarea { width: 100%; padding: 0.55rem; border: 1px solid #d1d5db; border-radius: 0.5rem; font-size: 0.95rem; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: #2563eb; ring: 2px; }
+textarea { resize: vertical; font: inherit; }
+.field { display: flex; flex-direction: column; gap: 0.4rem; }
+.field.full { grid-column: 1 / -1; }
+.req { color: #dc2626; }
+
+/* Form grid */
+.form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.form-grid > .actions { flex-direction: row; margin-top: 0; }
+.input-with-btn { display: flex; gap: 0.5rem; }
+.input-with-btn input { flex: 1; }
+
+/* Hint */
+.hint { font-size: 0.85rem; margin-top: 0.25rem; }
+.hint.error { color: #dc2626; }
+.hint.warning { color: #b45309; }
+
+/* Invoice form */
+.invoice-form { display: flex; flex-direction: column; gap: 1.5rem; }
+.trade-card h3, .order-card h3 { display: flex; align-items: center; gap: 0.5rem; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+th, td { text-align: left; padding: 0.6rem 0.5rem; border-bottom: 1px solid #e5e7bb; }
+th { background: #f9fafb; font-weight: 600; color: #374151; font-size: 0.9rem; }
+td input { width: 100%; padding: 0.4rem; }
+td.amount { font-variant-numeric: tabular-nums; }
+td.address-cell { white-space: pre-line; min-width: 180px; }
+
+/* Add item button */
+.order-card > .btn { margin-top: 0.75rem; width: fit-content; }
+
+/* Totals */
+.totals { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 1rem; border-top: 2px solid #111827; padding-top: 0.75rem; }
+.totals div { display: flex; justify-content: space-between; font-size: 0.95rem; }
+.totals .tax-row { align-items: center; }
+.totals .tax-selector { justify-content: flex-start; align-items: center; gap: 0.75rem; }
+.totals .tax-selector select { width: 5.5rem; }
+.totals .grand { font-size: 1.1rem; font-weight: 700; color: #111827; border-top: 1px solid #d1d5db; padding-top: 0.5rem; margin-top: 0.4rem; }
+
+.form-actions { display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1rem; }
+
+/* Home */
+.actions { display: flex; gap: 1rem; margin-top: 1.5rem; }
+
+.muted { color: #6b7280; font-size: 0.95rem; }
+
+/* Empty table */
+tbody td { text-align: center; color: #6b7280; }
+
+/* Toast focus styles */
+button[aria-label="Dismiss"]:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
